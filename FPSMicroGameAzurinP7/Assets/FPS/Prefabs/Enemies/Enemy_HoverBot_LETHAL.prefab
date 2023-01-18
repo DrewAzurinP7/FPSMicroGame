@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 797398738606809810}
   - component: {fileID: 1614318205656627459}
   m_Layer: 0
-  m_Name: Enemy_HoverBot
+  m_Name: Enemy_HoverBot_LETHAL
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -472,8 +472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DetectionSourcePoint: {fileID: 6571005840976436832}
-  DetectionRange: 30
-  AttackRange: 15
+  DetectionRange: 20
+  AttackRange: 10
   KnownTargetTimeout: 12
   Animator: {fileID: 0}
 --- !u!1 &6421371450313891992
@@ -783,12 +783,12 @@ MonoBehaviour:
   WeaponRoot: {fileID: 8815063736924141185}
   WeaponMuzzle: {fileID: 2096565386399891227}
   ShootType: 1
-  ProjectilePrefab: {fileID: 8924682559891268397, guid: ec753d54f333bb944b8b04884ad63828,
+  ProjectilePrefab: {fileID: 8924682559891268397, guid: b50027b0e33ae564f9975a2dd215d84d,
     type: 3}
-  DelayBetweenShots: 0.8
-  BulletSpreadAngle: 0
-  BulletsPerShot: 1
-  RecoilForce: 1
+  DelayBetweenShots: 1
+  BulletSpreadAngle: 28
+  BulletsPerShot: 10
+  RecoilForce: 1.5
   AimZoomRatio: 1
   AimOffset: {x: 0, y: 0, z: 0}
   AutomaticReload: 1
